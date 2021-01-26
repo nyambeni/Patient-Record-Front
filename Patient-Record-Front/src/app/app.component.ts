@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Patient-Record-Front';
+  router: any;
+
+  constructor(router: Router){}
+
+
 }
