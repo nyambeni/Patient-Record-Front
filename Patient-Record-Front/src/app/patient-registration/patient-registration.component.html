@@ -1,0 +1,87 @@
+<div>
+    <form #registrationForm="ngForm" (ngSubmit)="registrationForm.form.valid && registerPatient()" class="patient-login" novalidate>
+       <h1 class="page-heading">{{title}}</h1>
+       <div class="form-group">
+          <input type="text" name="patientId" ngModel #patientId="ngModel" required pattern="^\d{13}$" placeholder="ID NUMBER">
+         <div *ngIf="patientId.invalid && (patientId.touched || patientId.dirty)">  
+          <div class="required-fields" *ngIf="patientId.errors?.required">
+           ID number is required!
+           </div>
+          <div class="required-fields" *ngIf="patientId.errors?.pattern">
+           Invalid, ID number must be 13 digits!
+           </div>
+         </div>
+       </div>
+       <div class="form-group">
+          <input type="text" name="patientName" ngModel minlength="3" maxlength="15" #patientName="ngModel" required pattern="^[a-zA-Z]+$" placeholder="NAME">
+         <div *ngIf="patientName.invalid && (patientName.touched || patientName.dirty)">  
+          <div class="required-fields" *ngIf="patientName.errors?.required">
+           Name is required!
+           </div>
+          <div class="required-fields" *ngIf="patientName.errors?.pattern">
+           Invalid, Only characters are allowed!
+           </div>
+          <div class="required-fields" *ngIf="patientName.errors?.minlength">
+           Name minimum lenght is 3 characters.
+           </div>
+         </div>
+       </div>
+       <div class="form-group">
+          <input type="text" name="patientSurname" ngModel minlength="3" maxlength="15" #patientSurname="ngModel" required pattern="^[a-zA-Z]+$" placeholder="SURNAME">
+         <div *ngIf="patientSurname.invalid && (patientSurname.touched || patientSurname.dirty)">  
+          <div class="required-fields" *ngIf="patientSurname.errors?.required">
+           Surname is required!
+           </div>
+          <div class="required-fields" *ngIf="patientSurname.errors?.pattern">
+           Invalid, Only characters are allowed!
+           </div>
+          <div class="required-fields" *ngIf="patientSurname.errors?.minlength">
+           Surname minimum lenght is 3 characters.
+           </div>
+         </div>
+       </div>
+       <div class="form-group">
+          <input type="date" name="patientDOB" ngModel #patientDOB="ngModel" required>
+         <div *ngIf="patientDOB.invalid && (patientDOB.touched || patientDOB.dirty)">  
+          <div class="required-fields" *ngIf="patientDOB.errors?.required">
+           Date of Birth is required!
+           </div>
+         </div>
+       </div>
+       <div class="form-group">
+          <input type="text" name="patientPhone" ngModel minlength="10" maxlength="10" #patientPhone="ngModel" required pattern="^\d{10}$" placeholder="CONTACT NUMBER">
+         <div *ngIf="patientPhone.invalid && (patientPhone.touched || patientPhone.dirty)">  
+          <div class="required-fields" *ngIf="patientPhone.errors?.required">
+           Phone number is required!
+           </div>
+          <div class="required-fields" *ngIf="patientPhone.errors?.pattern">
+           Phone number is invalid!
+           </div>
+         </div>
+       </div>
+       <div class="form-group">
+          <input type="email" name="patientEmail" ngModel #patientEmail="ngModel" required  placeholder="EMAIL">
+         <div *ngIf="patientEmail.invalid && (patientEmail.touched || patientEmail.dirty)">  
+          <div class="required-fields" *ngIf="patientEmail.errors?.required">
+           Email is required!
+           </div>
+          <div class="required-fields" *ngIf="patientEmail.errors?.email">
+           Invalid email address!
+           </div>
+          
+         </div>
+       </div>
+       <div class="form-group">
+          <select name="Patient">
+           <option value="">choose blood type</option>
+          <option *ngFor="let blood of bloodTypes" [value]="blood">{{blood}}</option>
+         </select>
+         
+       </div>
+       <div class="form-group">
+       <button class="register-button" type="submit">Register</button>
+       </div>
+    </form>
+    <button (click)="logout()" class="logout-button" >Logout</button>	
+    <button  class="back-button" >Back</button>
+    </div>

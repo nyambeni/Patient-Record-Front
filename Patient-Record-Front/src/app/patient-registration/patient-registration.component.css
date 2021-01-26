@@ -1,0 +1,79 @@
+.patient-login{
+	margin-left:30%;
+	margin-right:30%;
+}
+
+h1{
+	color:white;
+	font-size:60px;
+	text-align:center;
+	
+}
+
+.form-group{
+	margin-left:0;
+	margin-right:30%;
+}
+
+input[type=text], input[type=email], input[type=date] {
+	width: 100%;
+	display:inline-block;
+	border:1px solid #f1f1f1;
+	border-radius: 4px;
+	box-sizing: border-box;
+	height: 30px;
+	padding:5px;
+	margin-top:5px;
+}
+
+select{
+	width: 40%;
+	display:inline-block;
+	border:1px solid #f1f1f1;
+	border-radius: 4px;
+	box-sizing: border-box;
+	height: 30px;
+	padding:5px;
+	margin-top:5px;
+}
+
+.logout-button{
+	padding: 8px;
+	border: none;
+	border-radius:10px;
+	margin-top:40px;
+	margin-right:20px;
+	width:10%;
+	float:right;
+}
+
+.back-button{
+	padding: 8px;
+	border: none;
+	border-radius:10px;
+	margin-top:40px;
+	margin-right:20px;
+	width:10%;
+	float:right;
+}
+
+
+.required-fields{
+	background-color: #ddd;
+	height: 30px;
+	padding:5px;
+	width: 98%;
+	color: red;
+	margin-top:5px;
+	border-radius: 4px;
+	
+}
+
+.register-button{
+	padding: 8px;
+	border: none;
+	border-radius:10px;
+	margin-top:30px;
+	width:48%;
+	float:left;
+}
