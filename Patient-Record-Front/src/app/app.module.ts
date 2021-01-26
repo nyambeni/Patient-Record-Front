@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BookingsComponent } from './bookings/bookings.component';
 import { Routes, RouterModule } from '@angular/router';
+import {DpDatePickerModule} from 'ng2-date-picker';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { Routes, RouterModule } from '@angular/router';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DpDatePickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,46 @@
-<p>bookings works!</p>
+HTML
+
+<div>
+
+    <head>
+        <title>Bookings</title>
+
+    </head>
+
+    <body>
+        <h1>BOOKINGS</h1>
+        <div>
+            <form class="form">
+                <div class="col-auto">
+                    <input type="text" readonly class="id" id="patientID" value="email@example.com">
+                </div>
+                <div class="col-auto">
+                    <input type="text" class="phone" id="phoneNumber" placeholder="Phone Number">
+                </div>
+                <div class="col-auto">
+                    <input class="date" type="date" id="appointmaentDate" name="appointmaentDate">
+                </div>
+                <div class="col-auto">
+                    <input class="mail" type="email" class="email" id="email" placeholder="Email">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn1">Confirm</button>
+                </div>
+                <div class="cancel">
+                    <button class="btn2" ng-click="cancelEdit()">Cancel</button>
+                </div>
+                <div>
+                    <button class="btn3" type="submit" ng-click="onClickForm()" ng-show="!showForm">View Appointment
+                  </button>
+                </div>
+                <div>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+            </form>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </body>
+</div>

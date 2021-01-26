@@ -1,0 +1,17 @@
+body {
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    font-size: 60px;
+}
+
+.mail {
+    width: fit-content;
+    position: absolute;
+    left: 500px;
+}
