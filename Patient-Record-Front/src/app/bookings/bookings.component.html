@@ -1,46 +1,58 @@
-HTML
+<!DOCTYPE html>
+<html lang="en">
 
-<div>
+<head>
 
-    <head>
-        <title>Bookings</title>
+    <title>Form Design #1</title>
+    <style>
+        body {
+            padding: 25px;
+        }
+    </style>
+</head>
 
-    </head>
-
-    <body>
-        <h1>BOOKINGS</h1>
-        <div>
-            <form class="form">
-                <div class="col-auto">
-                    <input type="text" readonly class="id" id="patientID" value="email@example.com">
-                </div>
-                <div class="col-auto">
-                    <input type="text" class="phone" id="phoneNumber" placeholder="Phone Number">
-                </div>
-                <div class="col-auto">
-                    <input class="date" type="date" id="appointmaentDate" name="appointmaentDate">
-                </div>
-                <div class="col-auto">
-                    <input class="mail" type="email" class="email" id="email" placeholder="Email">
-                </div>
-                <div class="col-auto">
-                    <button type="submit" class="btn1">Confirm</button>
-                </div>
-                <div class="cancel">
-                    <button class="btn2" ng-click="cancelEdit()">Cancel</button>
-                </div>
-                <div>
-                    <button class="btn3" type="submit" ng-click="onClickForm()" ng-show="!showForm">View Appointment
-                  </button>
-                </div>
-                <div>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                </div>
-            </form>
+<body>
+    <form class="form" action="/bookings">
+        <div class="form__title">Bookings</div>
+        <p class="form__desc">
+            fggfgglflkl
+        </p>
+        <div class="form__item1">
+            <input type="text" readonly class="form__input" name="patientId" id="patientId" value="1234567891112">
+            <span class="form__error">A sample error message</span>
+        </div>
+        <div class="form__item2">
+            <input type="text" class="form__input" name="patientPhone" id="patientPhone" placeholder="Phone Number">
+            <span class="form__error">A sample error message</span>
+        </div>
+        <div class="form__item3">
+            <input type="date" class="form__input" name="appointmaentDate" id="appointmaentDate">
+            <span class="form__error">A sample error message</span>
+        </div>
+        <div class="form__item4">
+            <input type="email" class="form__input" name="patientEmail" id="patientEmail" placeholder="patient@email.com">
+            <span class="form__error">A sample error message</span>
+        </div>
+        <div class="form__confirm">
+            <button type="submit" class="button1">Confirm</button>
+            <button class="button2" ng-click="cancelEdit()">Cancel</button>
+        </div>
+        <div class="form__view">
+            <button class="button3" type="submit" ng-click="onClickForm()" ng-show="!showForm">View Appointment</button>
+        </div>
+        <div class="form__logout">
+            <button type="submit" class="button4">Logout</button>
         </div>
 
+    </form>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    </body>
-</div>
+    <div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+    <script src="'./form.js"></script>
+
+</body>
+
+</html>
