@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>Form Design #1</title>
+    <title>Bookings</title>
     <style>
         body {
             padding: 25px;
@@ -38,7 +38,9 @@
             <button class="button2" ng-click="cancelEdit()">Cancel</button>
         </div>
         <div class="form__view">
-            <button class="button3" type="submit" ng-click="onClickForm()" ng-show="!showForm">View Appointment</button>
+            <form method="get" action="viewBookings">
+                <button class="button3" type="submit">View Bookings</button>
+            </form>
         </div>
         <div class="form__logout">
             <button type="submit" class="button4">Logout</button>
