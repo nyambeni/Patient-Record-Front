@@ -67,6 +67,7 @@
 
 body {
     background-color: blue;
+    height: 100vh;
 }
 
 .form__input:focus {
