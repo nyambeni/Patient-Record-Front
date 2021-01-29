@@ -1,0 +1,55 @@
+
+<div class="container">
+    <h1>{{title}}</h1>
+    <div class="aside">
+    <table>
+      <tr>
+        <td class="label"><label>Name</label></td>
+        <td class="text-input"><input type="text" name="patientName" value="Nomsa"></td>		
+      </tr>
+      <tr>
+        <td class="label"><label>Surname</label></td>
+        <td class="text-input"><input type="text" name="patientSurname" value="Tshabalala"></td>		
+      </tr>
+      <tr>
+        <td class="label"><label>Age</label></td>
+        <td class="other-input"><input type="text" name="patientAge" value="21"></td>		
+      </tr>
+      <tr>
+        <td class="label"><label>BloodType</label></td>
+        <td class="other-input"><input type="text" name="patientBloodType" value="A+"></td>		
+      </tr>
+      <tr>
+        <td class="label"><label>Cronic Conditions</label></td>
+        <td class="checkbox"><input type="checkbox" name="cronicCondition1" value="None"> None<br></td>	
+      </tr>
+      <tr>
+        <td></td>
+        <td class="checkbox">
+        <input type="checkbox" name="cronicCondition2" value="cancer">Cancer<br>
+        <input type="checkbox" name="cronicCondition3" value="Diabetes">Diabetes<br>
+        <input type="checkbox" name="cronicCondition4" value="Physical Disability">Physical Disability<br>
+        <input type="checkbox" name="cronicCondition5" value="Asthma">Asthma<br>
+        <input type="checkbox" name="cronicCondition6" value="Multiple Sclerosis">Multiple Sclerosis<br>
+        </td>		
+      </tr>
+    </table>
+    </div>
+    <div class="aside">
+     <form>
+        <div class="form-group">
+          <h4>Medical Report</h4>
+          <textarea>Detailed Information About Patient</textarea><br>
+          <button class="button">Cancel</button><button class="button">Update</button>
+        </div>
+        <div class="form-group">
+          <h4>Prescription</h4>
+          <textarea>Prescription Details</textarea><br>
+          <button class="button">Cancel</button><button class="button">Create</button>
+        </div>
+     </form>
+    <button (click)="logout()" class="logout-button" >Logout</button> 
+    </div>
+    
+    </div>
+
