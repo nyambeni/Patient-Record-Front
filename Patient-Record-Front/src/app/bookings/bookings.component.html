@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Bookings</title>
+    <style>
+        body {
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="form" action="/bookings">
+        <div class="form__title">Bookings</div>
+        <p class="form__desc">
+            fggfgglflkl
+        </p>
+        <div class="form__item1">
+            <input type="text" readonly class="form__input" name="patientId" id="patientId" value="1234567891112">
+            <span class="form__error">A sample error message</span>
+        </div>
+        <div class="form__item2">
+            <input type="text" class="form__input" name="patientPhone" id="patientPhone" placeholder="Phone Number">
+            <span class="form__error">A sample error message</span>
+        </div>
+        <div class="form__item3">
+            <input type="date" class="form__input" name="appointmaentDate" id="appointmaentDate">
+            <span class="form__error">A sample error message</span>
+        </div>
+        <div class="form__item4">
+            <input type="email" class="form__input" name="patientEmail" id="patientEmail" placeholder="patient@email.com">
+            <span class="form__error">A sample error message</span>
+        </div>
+        <div class="form__confirm">
+            <button type="submit" class="button1">Confirm</button>
+            <button class="button2" ng-click="cancelEdit()">Cancel</button>
+        </div>
+        <div class="form__view">
+            <form method="get" action="viewBookings">
+                <button class="button3" type="submit">View Bookings</button>
+            </form>
+        </div>
+        <div class="form__logout">
+            <button type="submit" class="button4">Logout</button>
+        </div>
+
+    </form>
+
+    <script src="'./form.js"></script>
+
+</body>
+
+</html>
