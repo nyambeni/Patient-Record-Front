@@ -1,0 +1,66 @@
+
+.patient-details{
+	margin-left:30%;
+	margin-right:30%;
+}
+
+.page-heading{
+	color:white;
+	font-size:50px;
+	text-align:center;
+	
+}
+.form-group input[type=text]{
+	width: 100%;
+	display:inline-block;
+	border:1px solid #ddd;
+	border-radius: 4px;
+	box-sizing: border-box;
+	height: 30px;
+	padding:5px;
+}
+
+.form-group{
+	margin-bottom:10px;
+}
+
+.form-group-blood-type input[type=text]{
+	width: 10%;
+	display:inline-block;
+	border:1px solid #ddd;
+	border-radius: 4px;
+	box-sizing: border-box;
+	height: 30px;
+	padding:5px;
+}
+
+.book-button{
+	padding: 8px;
+	border: none;
+	border-radius:10px;
+	margin-top:50px;
+	margin-right:5px;
+	width:10%;
+	float:left;
+	margin-left:30%;
+}
+
+.back-button{
+	padding: 8px;
+	border: none;
+	border-radius:10px;
+	margin-top:50px;
+	width:10%;
+	float:right;
+	margin-right:8px;
+}
+
+.logout-button{
+	padding: 8px;
+	border: none;
+	border-radius:10px;
+	margin-top:50px;
+	margin-right:20px;
+	width:10%;
+	float:right;
+}

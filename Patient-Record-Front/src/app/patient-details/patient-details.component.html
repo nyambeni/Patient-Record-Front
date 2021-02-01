@@ -1,0 +1,30 @@
+<div *ngIf="patient">
+    <div  class="patient-details">
+      <h1 class="page-heading">{{title}}</h1>
+    <div class="form-group">
+      <input type="text" name="idNumber" [(ngModel)]="patient.patientID" readonly>
+    </div>
+    <div class="form-group">
+      <input type="text" name="name" [(ngModel)]="patient.patientName" readonly>
+    </div>
+    <div class="form-group">
+      <input type="text" name="surname" [(ngModel)]="patient.patientSurname" readonly>
+    </div>
+    <div class="form-group">
+      <input type="text" name="dateOfBirth" [(ngModel)]="patient.patientDateOfBirth" readonly>
+    </div>
+    <div class="form-group">
+      <input type="text" name="phone" [(ngModel)]="patient.patientPhone" readonly>
+    </div>
+    <div class="form-group">
+      <input type="text" name="email" [(ngModel)]="patient.patientEmail" readonly>
+    </div>
+    <div class="form-group-blood-type">
+      <input type="text" name="bloodType" [(ngModel)]="patient.patientBloodType" readonly>
+    </div>
+    </div>
+    <button (click)="bookAppointment(patient.patientID)" class="book-button" >Book Appointment</button>
+    <button (click)="logout()" class="logout-button" >Logout</button>
+    <button (click)="back()" class="back-button" >Back</button>
+    
+    </div>
