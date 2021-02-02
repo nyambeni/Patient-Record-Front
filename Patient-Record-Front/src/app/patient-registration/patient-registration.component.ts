@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm} from '@angular/forms';
+import { NgForm, NgModel} from '@angular/forms';
 import { Router } from '@angular/router';
+
 
 
 @Component({
@@ -12,6 +13,7 @@ export class PatientRegistrationComponent implements OnInit {
 	
   
   bloodTypes: string[] = ['A+','A-', 'B+', 'B-', 'O+', 'O-', 'AB+', 'AB-'];
+  router: any;
 
   constructor() {}
   title = 'Patient Registration';

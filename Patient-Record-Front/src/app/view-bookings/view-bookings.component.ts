@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -6,22 +7,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './view-bookings.component.html',
   styleUrls: ['./view-bookings.component.css']
 })
-export class ViewBookingsComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
-
-import { Router } from '@angular/router';
-
-@Component({
-  selector: 'app-view-appointments',
-  templateUrl: './view-appointments.component.html',
-  styleUrls: ['./view-appointments.component.css']
-})
 export class ViewAppointmentsComponent implements OnInit {
 
   constructor(private router: Router) { }
@@ -30,13 +16,14 @@ export class ViewAppointmentsComponent implements OnInit {
   ngOnInit(): void {
   }
   
-  logout(){
-	  this.router.navigate(['welcome-page']);
+  /*logout(){
+    const newLocal = 'welcome-page';
+	  this.router.navigate([newLocal]);
   }
   
   back(idNo: string){
 	  
 	this.router.navigate(['patient-book-appointment', idNo]);
-  }
+  }*/
 
 }

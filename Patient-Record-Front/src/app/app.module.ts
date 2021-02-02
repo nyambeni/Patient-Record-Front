@@ -11,7 +11,6 @@ import { ViewBookingsComponent } from './view-bookings/view-bookings.component';
 
 import { PatientRegistrationComponent } from './patient-registration/patient-registration.component';
 import { PatientDetailsComponent } from './patient-details/patient-details.component';
-import { ViewBookingsComponent } from './view-bookings/view-bookings.component';
 import { PatientMedicalRecordComponent } from './patient-medical-record/patient-medical-record.component';
 
 
@@ -20,8 +19,7 @@ import { PatientMedicalRecordComponent } from './patient-medical-record/patient-
     AppComponent,
 
     BookingsComponent,
-    ViewBookingsComponent
-
+    ViewBookingsComponent,
     PatientRegistrationComponent,
     PatientDetailsComponent,
     ViewBookingsComponent,

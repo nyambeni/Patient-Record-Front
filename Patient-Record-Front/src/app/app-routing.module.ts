@@ -6,15 +6,10 @@ import { ViewBookingsComponent } from '../app/view-bookings/view-bookings.compon
 
 const routes: Routes = [
  {path: 'bookings', component: BookingsComponent },
- {path: 'viewBookings', component: ViewBookingsComponent }
+ {path: 'viewBookings', component: ViewBookingsComponent },
+ { path: 'patient-r egistration', component: PatientRegistrationComponent}
 ];
 import { PatientRegistrationComponent } from './patient-registration/patient-registration.component';
-
-const routes: Routes = [
-	{ path: 'patient-registration', component: PatientRegistrationComponent}
-
-	
-	];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
