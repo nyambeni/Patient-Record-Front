@@ -12,6 +12,7 @@ export class PatientRegistrationComponent implements OnInit {
 	
   
   bloodTypes: string[] = ['A+','A-', 'B+', 'B-', 'O+', 'O-', 'AB+', 'AB-'];
+  router: any;
 
   constructor() {}
   title = 'Patient Registration';

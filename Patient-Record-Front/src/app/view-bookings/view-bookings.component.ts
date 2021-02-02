@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 
+
 @Component({
   selector: 'app-view-bookings',
   templateUrl: './view-bookings.component.html',
@@ -14,7 +15,6 @@ export class ViewBookingsComponent implements OnInit {
   }
 
 }
-
 import { Router } from '@angular/router';
 
 @Component({
