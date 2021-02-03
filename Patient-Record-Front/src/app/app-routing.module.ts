@@ -7,8 +7,14 @@ import { PatientRegistrationComponent } from './patient-registration/patient-reg
 const routes: Routes = [
  {path: 'bookings', component: BookingsComponent },
  {path: 'viewBookings', component: ViewBookingsComponent },
+<<<<<<< HEAD
  { path: 'patient-registration', component: PatientRegistrationComponent}
 ];
+=======
+ { path: 'patient-r egistration', component: PatientRegistrationComponent}
+];
+import { PatientRegistrationComponent } from './patient-registration/patient-registration.component';
+>>>>>>> ff38d472a1800d2b6dfd7e616bdd6e28290b0b04
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

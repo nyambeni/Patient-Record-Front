@@ -22,7 +22,10 @@ import { ViewAppointmentsComponent } from './view-appointments/view-appointments
 
     BookingsComponent,
     ViewBookingsComponent,
+<<<<<<< HEAD
 
+=======
+>>>>>>> ff38d472a1800d2b6dfd7e616bdd6e28290b0b04
     PatientRegistrationComponent,
     PatientDetailsComponent,
     ViewBookingsComponent,
