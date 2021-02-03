@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { BookingsComponent } from './bookings/bookings.component';
-//import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import {DpDatePickerModule} from 'ng2-date-picker';
 import { ViewBookingsComponent } from './view-bookings/view-bookings.component';
 
@@ -15,6 +16,8 @@ import { PatientDetailsComponent } from './patient-details/patient-details.compo
 import { PatientMedicalRecordComponent } from './patient-medical-record/patient-medical-record.component';
 import { PatientLoginComponent } from './patient-login/patient-login.component';
 
+
+import { ViewAppointmentsComponent } from './view-appointments/view-appointments.component';
 
 @NgModule({
   declarations: [
@@ -26,12 +29,14 @@ import { PatientLoginComponent } from './patient-login/patient-login.component';
     PatientDetailsComponent,
     ViewBookingsComponent,
     PatientMedicalRecordComponent,
-    PatientLoginComponent
+    PatientLoginComponent,
+    ViewAppointmentsComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     DpDatePickerModule
   ],
   providers: [],
