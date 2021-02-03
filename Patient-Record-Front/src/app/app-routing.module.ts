@@ -3,18 +3,16 @@ import { Routes, RouterModule } from '@angular/router';
 import { BookingsComponent } from '../app/bookings/bookings.component';
 import { ViewBookingsComponent } from '../app/view-bookings/view-bookings.component';
 import { PatientRegistrationComponent } from './patient-registration/patient-registration.component';
+import { AdminHomeComponent } from './admin-home/admin-home.component';
+import { PatientAppointmentComponent } from './patient-appointment/patient-appointment.component';
 
 const routes: Routes = [
  {path: 'bookings', component: BookingsComponent },
  {path: 'viewBookings', component: ViewBookingsComponent },
-<<<<<<< HEAD
- { path: 'patient-registration', component: PatientRegistrationComponent}
+ { path: 'patient-r egistration', component: PatientRegistrationComponent},
+ {path: 'adminHome', component: AdminHomeComponent },
+ {path: 'patientAppointment', component: PatientAppointmentComponent }
 ];
-=======
- { path: 'patient-r egistration', component: PatientRegistrationComponent}
-];
-import { PatientRegistrationComponent } from './patient-registration/patient-registration.component';
->>>>>>> ff38d472a1800d2b6dfd7e616bdd6e28290b0b04
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

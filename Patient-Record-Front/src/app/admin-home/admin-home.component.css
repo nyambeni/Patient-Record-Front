@@ -1,0 +1,45 @@
+body {
+    background-color: blue;
+    height: 100vh;
+}
+
+.form__title {
+    font-size: 6em;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+}
+
+.button1 {
+    width: fit-content;
+    position: absolute;
+    top: 280px;
+    left: 690px;
+    width: 204px;
+}
+
+.button2 {
+    width: fit-content;
+    position: absolute;
+    top: 360px;
+    left: 690px;
+    width: 204px;
+}
+
+form {
+    text-align: center;
+}
+
+.input {
+    width: 200px;
+    position: absolute;
+    top: 200px;
+    left: 690px;
+}
+
+.button3 {
+    width: fit-content;
+    position: absolute;
+    left: 1400px;
+    top: 700px;
+}

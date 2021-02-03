@@ -14,6 +14,8 @@ import { PatientDetailsComponent } from './patient-details/patient-details.compo
 import { PatientMedicalRecordComponent } from './patient-medical-record/patient-medical-record.component';
 import { PatientLoginComponent } from './patient-login/patient-login.component';
 import { ViewAppointmentsComponent } from './view-appointments/view-appointments.component';
+import { AdminHomeComponent } from './admin-home/admin-home.component';
+import { PatientAppointmentComponent } from './patient-appointment/patient-appointment.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ViewAppointmentsComponent } from './view-appointments/view-appointments
     PatientDetailsComponent,
     PatientMedicalRecordComponent,
     PatientLoginComponent,
-    ViewAppointmentsComponent
+    ViewAppointmentsComponent,
+    AdminHomeComponent,
+    PatientAppointmentComponent
 
   ],
   imports: [
