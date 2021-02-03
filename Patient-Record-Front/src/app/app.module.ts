@@ -15,20 +15,14 @@ import { PatientMedicalRecordComponent } from './patient-medical-record/patient-
 import { PatientLoginComponent } from './patient-login/patient-login.component';
 import { ViewAppointmentsComponent } from './view-appointments/view-appointments.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
 
     BookingsComponent,
     ViewBookingsComponent,
-<<<<<<< HEAD
-
-=======
->>>>>>> ff38d472a1800d2b6dfd7e616bdd6e28290b0b04
     PatientRegistrationComponent,
     PatientDetailsComponent,
-    ViewBookingsComponent,
     PatientMedicalRecordComponent,
     PatientLoginComponent,
     ViewAppointmentsComponent
