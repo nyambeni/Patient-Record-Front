@@ -17,11 +17,7 @@ export class ViewBookingsComponent implements OnInit {
 
 import { Router } from '@angular/router';
 
-@Component({
-  selector: 'app-view-appointments',
-  templateUrl: './view-appointments.component.html',
-  styleUrls: ['./view-appointments.component.css']
-})
+
 export class ViewAppointmentsComponent implements OnInit {
 
   constructor(private router: Router) { }
@@ -29,14 +25,15 @@ export class ViewAppointmentsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  
+
   logout(){
 	  this.router.navigate(['welcome-page']);
   }
-  
+
   back(idNo: string){
-	  
-	this.router.navigate(['patient-book-appointment', idNo]);
+
+  	// tslint:disable-next-line: indent
+  	this.router.navigate(['patient-book-appointment', idNo]);
   }
 
 }

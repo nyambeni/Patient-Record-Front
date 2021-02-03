@@ -11,8 +11,9 @@ import { ViewBookingsComponent } from './view-bookings/view-bookings.component';
 
 import { PatientRegistrationComponent } from './patient-registration/patient-registration.component';
 import { PatientDetailsComponent } from './patient-details/patient-details.component';
-import { ViewBookingsComponent } from './view-bookings/view-bookings.component';
 import { PatientMedicalRecordComponent } from './patient-medical-record/patient-medical-record.component';
+import { PatientLoginComponent } from './patient-login/patient-login.component';
+import { ViewAppointmentsComponent } from './view-appointments/view-appointments.component';
 
 
 @NgModule({
@@ -20,12 +21,14 @@ import { PatientMedicalRecordComponent } from './patient-medical-record/patient-
     AppComponent,
 
     BookingsComponent,
-    ViewBookingsComponent
+    ViewBookingsComponent,
 
     PatientRegistrationComponent,
     PatientDetailsComponent,
     ViewBookingsComponent,
-    PatientMedicalRecordComponent
+    PatientMedicalRecordComponent,
+    PatientLoginComponent,
+    ViewAppointmentsComponent
 
   ],
   imports: [
