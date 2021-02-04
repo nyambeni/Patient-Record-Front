@@ -16,6 +16,13 @@ body {
     top: 280px;
     left: 690px;
     width: 204px;
+    display: inline-block;
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 30px;
+    padding: 5px;
+    margin-top: 5px;
 }
 
 .button2 {
@@ -24,6 +31,13 @@ body {
     top: 360px;
     left: 690px;
     width: 204px;
+    display: inline-block;
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 30px;
+    padding: 5px;
+    margin-top: 5px;
 }
 
 form {
@@ -35,6 +49,13 @@ form {
     position: absolute;
     top: 200px;
     left: 690px;
+    display: inline-block;
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 30px;
+    padding: 5px;
+    margin-top: 5px;
 }
 
 .button3 {
