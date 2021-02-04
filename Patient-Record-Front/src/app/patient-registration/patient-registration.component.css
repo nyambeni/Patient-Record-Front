@@ -1,3 +1,8 @@
+body {
+	background-color: blue;
+	height: 100vh;
+}
+
 .patient-login{
 	margin-left:30%;
 	margin-right:30%;

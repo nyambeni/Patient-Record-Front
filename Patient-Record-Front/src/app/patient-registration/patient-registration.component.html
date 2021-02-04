@@ -1,4 +1,4 @@
-<div>
+<body>
     <form #registrationForm="ngForm" (ngSubmit)="registrationForm.form.valid && registerPatient()" class="patient-login" novalidate>
        <h1 class="page-heading">{{title}}</h1>
        <div class="form-group">
@@ -84,4 +84,4 @@
     </form>
     <button (click)="logout()" class="logout-button" >Logout</button>	
     <button  class="back-button" >Back</button>
-    </div>
+  </body>
