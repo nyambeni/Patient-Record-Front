@@ -12,6 +12,50 @@
 </head>
 
 <body>
+
+    <form class="form" [formGroup]="myForm">
+        <div class="form__title">Bookings </div>
+        <div class="sms" id="message">{{myMessage}}</div>
+        <p class="form__desc">
+            fggfgglflkl
+        </p>
+        <div class="form__item1">
+            <input type="text" class="form__input" formControlName="patientId" value="1234567891112">
+            <span class="form__error">A sample error message</span>
+        </div>
+        <!--<div class="form__item2">
+            <input type="text" class="form__input" formControlName="patientPhone" placeholder="Phone Number">
+            <span class="form__error">A sample error message</span>
+        </div>-->
+        <div class="form__item3">
+            <input type="date" class="form__input" formControlName="appDate">
+            <span class="form__error">A sample error message</span>
+        </div>
+        <!--<div class="form__item4">
+            <input type="email" class="form__input" formControlName="patientEmail" placeholder="patient@email.com">
+            <span class="form__error">A sample error message</span>
+        </div>-->
+        <div class="form__confirm">
+            <button type="submit" (click)="showFlash()" class="button1">Confirm</button>
+            <flash-messages></flash-messages>
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+            <button class="button2" ng-click="cancelEdit()">Cancel</button>
+        </div>
+        <div class="form__view">
+            <form method="get" action="viewBookings">
+                <button class="button3" type="submit">View Bookings</button>
+            </form>
+        </div>
+        <div class="form__logout">
+            <button type="submit" class="button4">Logout</button>
+        </div>
+
+
+
+    </form>
+
+
+    <!--
     <form class="form" action="/bookings">
         <div class="form__title">Bookings</div>
         <p class="form__desc">
@@ -26,7 +70,7 @@
             <span class="form__error">A sample error message</span>
         </div>
         <div class="form__item3">
-            <input type="date" class="form__input" name="appointmaentDate" id="appointmaentDate">
+            <input type="date" class="form__input" name="appDate" id="appDate">
             <span class="form__error">A sample error message</span>
         </div>
         <div class="form__item4">
@@ -34,7 +78,7 @@
             <span class="form__error">A sample error message</span>
         </div>
         <div class="form__confirm">
-            <button type="submit" class="button1">Confirm</button>
+            <button type="submit" (click)='confirmBooking()' class="button1">Confirm</button>
             <button class="button2" ng-click="cancelEdit()">Cancel</button>
         </div>
         <div class="form__view">
@@ -49,7 +93,7 @@
     </form>
 
     <script src="'./form.js"></script>
-
+-->
 </body>
 
 </html>

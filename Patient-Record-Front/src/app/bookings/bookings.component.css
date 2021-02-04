@@ -4,6 +4,13 @@
     color: #ffffff;
 }
 
+.sms {
+    text-align: center;
+    font-weight: 600;
+    color: red;
+    font: 1.8em;
+}
+
 .form * {
     box-sizing: border-box;
     line-height: 1.5;

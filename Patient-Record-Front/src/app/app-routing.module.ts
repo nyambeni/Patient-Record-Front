@@ -5,13 +5,17 @@ import { ViewBookingsComponent } from '../app/view-bookings/view-bookings.compon
 import { PatientRegistrationComponent } from './patient-registration/patient-registration.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { PatientAppointmentComponent } from './patient-appointment/patient-appointment.component';
+import { ViewAppointmentsComponent } from './view-appointments/view-appointments.component';
+import { PatientLoginComponent } from './patient-login/patient-login.component';
 
 const routes: Routes = [
  {path: 'bookings', component: BookingsComponent },
  {path: 'viewBookings', component: ViewBookingsComponent },
- { path: 'patient-r egistration', component: PatientRegistrationComponent},
- {path: 'adminHome', component: AdminHomeComponent },
- {path: 'patientAppointment', component: PatientAppointmentComponent }
+ { path: 'patient-registration', component: PatientRegistrationComponent},
+ {path: '', component: AdminHomeComponent },
+ {path: 'patientAppointment', component: PatientAppointmentComponent },
+ {path: 'viewAppt', component: ViewAppointmentsComponent },
+ {path: 'patientLogin', component: PatientLoginComponent }
 ];
 
 @NgModule({
